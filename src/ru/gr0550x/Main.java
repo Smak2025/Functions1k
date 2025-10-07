@@ -31,6 +31,7 @@ public class Main {
         }
     }
 
+    // Функция не сработает!!!
     public static void swap(int a, int b){
         var t = a;
         a = b;
@@ -41,10 +42,10 @@ public class Main {
         for (int i = 0; i < array.length - 1; i++){
             for (int j = i + 1; j < array.length; j++){
                 if (array[i] > array[j]){
-//                    var t = array[i];
-//                    array[i] = array[j];
-//                    array[j] = t;
-                    swap(array[i], array[j]);
+                    var t = array[i];
+                    array[i] = array[j];
+                    array[j] = t;
+//                    swap(array[i], array[j]);
                 }
             }
         }
