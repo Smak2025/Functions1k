@@ -2,6 +2,7 @@ package ru.gr0550x;
 
 import java.util.Random;
 import java.util.Scanner;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class Main {
 
@@ -53,6 +54,7 @@ public class Main {
 
     public static void main(String[] args) {
         int n;
+        System.out.println("Кол-во эл-ов массива:");
         n = new Scanner(System.in).nextInt();
         var mas = new int[n];
         fillArray(mas);
