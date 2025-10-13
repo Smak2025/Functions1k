@@ -2,7 +2,6 @@ package ru.gr0550x;
 
 import java.util.Random;
 import java.util.Scanner;
-import java.util.concurrent.atomic.AtomicInteger;
 
 public class Main {
 
@@ -12,6 +11,8 @@ public class Main {
             array[i] = rnd.nextInt(-100, 101);
         }
     }
+
+
 
     public static void showArray(int[] array){
         for (var elem: array){
@@ -61,5 +62,13 @@ public class Main {
         showArray(mas);
         sortMin(mas);
         showArray(mas);
+        System.out.println(F.factorial(10));
+    }
+}
+
+class F{
+    public static long factorial(int n){
+        if (n <= 1) return 1L;
+        return n * factorial(n-1);
     }
 }
