@@ -53,6 +53,23 @@ public class Main {
         }
     }
 
+    private static int partition(int[] arr, int lo, int hi){
+        var pivot = arr[(lo + hi) / 2];
+        int i = lo - 1;
+        int j = hi + 1;
+        while (true){
+            while (arr[++i] < pivot);
+            while (arr[--j] > pivot);
+            if (i >= j) return j;
+            var t = arr[i];
+            arr[i] = arr[j];
+            arr[j] = t;
+        }
+    }
+    public static void quickSort(int[] arr){
+
+    }
+
     public static void main(String[] args) {
         int n;
         System.out.println("Кол-во эл-ов массива:");
